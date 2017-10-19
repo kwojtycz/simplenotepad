@@ -21,8 +21,8 @@ public class Menu {
                     case 1:
                     System.out.println("Write name of your note:");
                     String name = input.next();
-                    noteName noteName = new noteName(name);
-                    File noteFile = new File(noteName.noteName);
+                    // Note Note = new Note(name); //obiekt spełniajacy te samą funkcję zadeklarowany dwa razy
+                    File noteFile = new File(name);
                     noteFile.createNewFile();
                     System.out.println("Write your text");
                     FileWriter writer = new FileWriter(noteFile);
